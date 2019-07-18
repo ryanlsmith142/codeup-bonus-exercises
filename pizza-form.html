@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <header>
+        <h1>Order your pizza here</h1>
+    </header>
+    <main>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+
+            <h3>Select your crust</h3>
+            <label for="crust">
+                <select id="crust" name="crust">
+                    <option value="pan">Pan</option>
+                    <option value="handtossed">Handtossed</option>
+                    <option value="thin">Thin</option>
+                </select>
+            </label>
+
+            <h3>Select your toppings</h3>
+            <label for="pepperoni">
+            Pepperoni <input id="pepperoni" type="checkbox"  name="toppings" value="pepperoni">
+            </label>
+            <label for="sausage">
+            Sausage <input id="sausage" type="checkbox"  name="toppings" value="sausage">
+            </label>
+            <label for="bacon">
+            Bacon <input id="bacon" type="checkbox"  name="toppings" value="bacon">
+            </label>
+            <label for="green-peppers">
+            Green Peppers <input id="green-peppers" type="checkbox"  name="toppings" value="green-peppers">
+            </label>
+            <label>
+            Black Olives <input type="checkbox"  name="toppings" value="black-olives">
+            </label>
+
+            <h3>Delivery Address</h3>
+            <label for="street">
+                Street <input id="street" name="street" type="text"><br>
+            </label>
+            <label for="city">
+                City <input id="city" name="city" type="text"><br>
+            </label>
+            <label for="zipcode">
+                Zipcode <input id="zipcode" name="zipcode" type="text"><br>
+            </label>
+
+            <input type="submit">
+        </form>
+    </main>
+</body>
+</html>
