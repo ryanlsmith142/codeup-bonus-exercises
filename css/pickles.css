@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+
+
+h1 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+.side-header {
+    background: black;
+    width: 20%;
+    height: 100%;
+}
