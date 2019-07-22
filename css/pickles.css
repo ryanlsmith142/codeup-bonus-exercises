@@ -25,11 +25,14 @@ hr {
     width: 20em;
     height: 100%;
 }
+.pickles {
+    margin: 0;
+}
 
 img {
-    height: 10em;
-    width: auto;
-    margin: auto;
+    height: 15em;
+    width: 18em;
+    margin: 1em;
 
 
 }
