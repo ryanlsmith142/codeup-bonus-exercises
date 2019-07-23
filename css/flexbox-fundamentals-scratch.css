@@ -1,0 +1,23 @@
+* {
+   border-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #87CEFA;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+
+}
+.card {
+    height: 75%;
+    width: 50%;
+    background: white;
+
+
+}
