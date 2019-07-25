@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <!-- Title displays in firefox content area-->
     <!--    <title>Facebook</title>-->
-</head>
-<body>
-    <header>
+    </head>
+    <body>
+        <header class="main-header">
             <div class="facebook-header"></div>
-            <h1>facebook</h1>
-
+            <h1 class="logo">facebook</h1>
             <form method="POST" action="#">
                 <label for="username">
-                    Email or Phone<input id="username" name="username" type="text">
+                    Email or Phone<br><input id="username" name="username" type="text">
                 </label>
                 <label for="password">
                     Password<input id="password" name="password" type="password">
@@ -22,26 +21,59 @@
                 <input type="submit" value="Log in"><br>
                 <span><a href="#">Forgot account?</a></span>
             </form>
-    </header>
-    <main>
-        <section>
+        </header>
+        <section class="about">
             <h2>Connect with friends and the world around you on Facebook.</h2>
-            <div>
-                <i class="far fa-file-word"></i>
-                <p>See photos and updates from friends in News Feed.</p>
-            </div>
-            <div>
-                <i class="fas fa-share"></i>
-                <p>Share what's new in your life on your timeline.</p>
-            </div>
-            <div>
-                <i class="fab fa-connectdevelop"></i>
-                <p>Find more of what you're looking for with Facebook Search.</p>
-            </div>
+            <ul>
+                <li><i class="far fa-file-word"></i></li>
+                <li><p>See photos and updates from friends in News Feed.</p></li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-share"></i></li>
+                <li><p>Share what's new in your life on your timeline.</p></li>
+            </ul>
+            <ul>
+                <li><i class="fab fa-connectdevelop"></i></li>
+                <li><p>Find more of what you're looking for with Facebook Search.</p></li>
+            </ul>
         </section>
-        <section>
-
+        <section class="sign-up">
+            <h2>Sign Up</h2>
+            <p>It's free and always will be.</p>
+<!--            <form method="POST" method="#">-->
+                <label for="first-name">
+                    <input id="first-name" name="first-name" type="text" placeholder="First name">
+                </label>
+                <label for="last-name">
+                    <input id="last-name" name="last-name" type="text" placeholder="Last name">
+                </label>
+                <label for="signup-username">
+                    <input id="signup-username" name="signup-username" type="text" placeholder="Mobile number or email">
+                </label>
+                <label for="signup-password">
+                    <input id="signup-password" name="signup-password" type="password" placeholder="New password">
+                </label>
+                <h3>Birthday</h3>
+                <select name="month">
+                    <option value="jan">Jan</option>
+                    <option value="feb">Feb</option>
+                </select>
+                <select name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select for="year">
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                </select>
+                <p><a href="#">Why do I need to provide my birthday?</a></p>
+                Male<input type="radio" name="gender" value="male">
+                Female<input type="radio" name="gender" value="female">
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+                <input type="submit" value="Sign Up">
+                <hr>
+                <p><a href="#">Create a page</a> for a celebrity, band or business.</p>
+<!--            </form>-->
         </section>
-    </main>
-</body>
+    </body>
 </html>
