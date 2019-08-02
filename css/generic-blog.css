@@ -1,0 +1,27 @@
+@media screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+/*    HEADER IN MY BLOG*/
+
+    .main-header {
+        grid-area: 1 / 1 / span 1 / span 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*ARTICLE ONE*/
+
+    .article-one {
+        grid-area: 2 / 1 / span 1 / span 8;
+    }
+
+    .
+}
