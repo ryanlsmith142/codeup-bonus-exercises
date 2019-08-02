@@ -67,27 +67,39 @@
         justify-content: center;
         align-items: center;
         max-width: 900px;
-        height: auto;
         margin: 0 auto;
+        padding: 1em;
     }
 
+    .background-color {
+        grid-area: 4 / 1 / 5 / 2;
+        background: #F1F1F1;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+    }
 
+    .position {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 
 
     .cup-article {
         grid-area: 4 / 1 / 5 / 2;
+        background: #F1F1F1;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         max-width: 900px;
         margin: 0 auto;
+        padding: 1em;
     }
 
     .quote {
         grid-area: 5 / 1 / 6 / 2;
+        background: #666666;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         max-width: 900px;
