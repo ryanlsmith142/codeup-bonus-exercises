@@ -61,21 +61,25 @@
                 "-sel."],
             i: 0,
             playLyrics: function() {
-                console.log(this.lyrics[this.i]);
-                this.i++;
+                console.log(jackBox.lyrics[jackBox.i]);
+                jackBox.i++;
             },
             play: function() {
 
-
-                if (this.triggered === false) {
+                if(jackBox.i === jackBox.lyrics.length) {
+                    jackBox.triggered = true;
+                    alert('Pop!');
+                } else if (this.triggered === false) {
 
 
                     setInterval(this.playLyrics, 1000);
 
 
                 }
+
             },
         };
+
             jackBox.play();
 
     </script>
