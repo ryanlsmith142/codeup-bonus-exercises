@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM Practice</title>
+</head>
+<body>
+    <script>
+// ================================= BOM CHALLENGES
+//
+// CHALLENGE 1: Build a Jack-In-The-Box
+//
+// Define an object called jackBox.
+//
+//     Include properties for...
+// triggered - whether or not the box has been sprung (should be false by default)
+// intervalId - set to null
+// play() - once called, if triggered is false, console.log one new element in the lyrics array every second
+// after the lyrics, stop the interval, set the triggered property to true, and alert POP!
+//     windUp() - once called will stop the play() method and set triggered to false
+// lyrics - an array with the following elements:
+//
+//     "All a-...",
+//         "-round the ...",
+//         "mulberry...",
+//         "bush, The...",
+//         "monkey...",
+//         "chased the...",
+//         "wea-...",
+//         "-sel...",
+//         "The monkey...",
+//         "stopped to...",
+//         "pull up his...",
+//         "sock,...",
+//         "Pop!...",
+//         "goes the...",
+//         "wea-...",
+//         "-sel."
+//
+// Include methods for...
+
+        var jackBox = {
+
+            triggered: false,
+            intervalId: null,
+            lyrics: ["All a-...",
+                "-round the ...",
+                "mulberry...",
+                "bush, The...",
+                "monkey...",
+                "chased the...",
+                "wea-...",
+                "-sel...",
+                "The monkey...",
+                "stopped to...",
+                "pull up his...",
+                "sock,...",
+                "Pop!...",
+                "goes the...",
+                "wea-...",
+                "-sel."],
+            i: 0,
+            playLyrics: function() {
+                console.log(this.lyrics[this.i]);
+                this.i++;
+            },
+            play: function() {
+
+
+                if (this.triggered === false) {
+
+
+                    setInterval(this.playLyrics, 1000);
+
+
+                }
+            },
+        };
+            jackBox.play();
+
+    </script>
+</body>
+</html>
