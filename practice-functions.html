@@ -551,7 +551,43 @@
     // console.log(squirrelPlay(95, true)); //→ true
 
 
+    // FUNCTION ------------------------------------------------------------------------
 
+     // Make a function named isTruthy(input) // remember that values other than true will behave like true. you may need to lookup truthy/falsy values in JavaScript
+    //
+    // var falsy = [false, 0, '', "", null, undefined, NaN];
+    //
+    // function isTruthy(input) {
+    //         if(input === )
+    // }
+
+
+    function isTruthy(value) {
+        switch (value) {
+            case false:
+                return 'The boolean value false is falsy';
+            case null:
+                return 'The null value is falsy';
+            case undefined:
+                return 'undefined is falsy';
+            case 0:
+                return 'The number 0 is falsy';
+            case '':
+                return 'The empty string is falsy (the only falsy string)';
+        }
+        return Boolean(value);
+    }
+
+    console.log(isTruthy(false));
+    console.log(isTruthy(null));
+    console.log(isTruthy(undefined));
+    console.log(isTruthy(0));
+    console.log(isTruthy(''));
+    console.log(isTruthy(NaN)); // false
+    console.log(isTruthy(true));
+    console.log(isTruthy({}));
+    console.log(isTruthy(1e3));
+    console.log(isTruthy('yes!'));
 </script>
 </body>
 </html>
