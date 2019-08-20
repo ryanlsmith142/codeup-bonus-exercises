@@ -101,17 +101,19 @@
         // rotateLeft3([7, 0, 0]) → 0,0,7
 
 
-        // function rotateLeft3(array) {
-        //     var sliceArray = array.slice(0, 1);
-        //     var newString = sliceArray.join();
-        //     console.log(newString);
-        //     return array.push(newString);
-        // }
-        //
-        // console.log(rotateLeft3([1, 2, 3]));
+        function rotateLeft3(array) {
+            var sliceArray = array.slice(0, 1);
+            var newArray = parseInt(sliceArray.join());
+            array.push(newArray);
+            array.shift();
+            return array;
+        }
+
+        console.log(rotateLeft3([1, 2, 3]));
         // console.log(rotateLeft3([1, 2, 3])); //→ 2,3,1
         // console.log(rotateLeft3([5, 11, 9])); //→ 11,9,5
         // console.log(rotateLeft3([7, 0, 0])); //→ 0,0,7
+
 
 
     </script>
