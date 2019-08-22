@@ -448,7 +448,7 @@
                 "quote": "A ship in port is safe, but that's not what ships are built for.",
                 "author": "Admiral Grace Hopper"
             }
-        ]
+        ];
 
         //TODO: Set the array of objects equal to the variable 'aphorisms'
 
@@ -529,15 +529,64 @@
 
         }
 
-        console.log(getRandomQuote(aphorisms));
+        // console.log(getRandomQuote(aphorisms));
 
         //TODO: Write a function named fiveRandomQuotes, that accepts the aphorisms array and returns an array of five random quotes and authors in the format "quote" + "-author".
 
+        //Create a function -----> fiveRandomQuotes()
 
+        //Parameter of an array ----> aphorisms
+
+        //Create a loop ---> should loop through array 5 times
+
+        // Return what we get from loop in correct format
+
+        function fiveRandomQuotes(array) {
+            var fiveRandomArray = [];
+            for(var i = 0; i <= 4; i++) {
+                fiveRandomArray.push(array[Math.floor(Math.random() * array.length)]);
+            } //End of For Loop
+
+            return fiveRandomArray;
+
+        } //End of fiveRandomQuotes Function
+
+        // console.log(fiveRandomQuotes(aphorisms));
 
         //TODO: Write a function named 'anonQuotes' that accepts the aphorisms array and returns an array of aphorism objects of all quotes by 'anonymous'. Each object should contain the following properties: { quote: <QUOTE_HERE>, author: <AUTHOR_HERE>}.
 
+
+        //Create a function ----> anonQuotes
+
+        //Parameter -----> aphorisms array
+
+        //Loop array -----> Look for object author: anonymous
+
+        // return an ARRAY of OBJECTS ----- should have quote and author
+
+
+        function anonQuotes(aphorismsArray) {
+            var anonymousArray = [];
+
+            aphorismsArray.forEach(function(aphorism,) {
+                if(aphorism.author === 'anonymous') {
+                    anonymousArray.push(aphorism);
+                } //End of IF statement
+
+            }); //End of ForEach
+
+
+           return anonymousArray;
+
+        } //End of AnonQuotes function
+
+        console.log(anonQuotes(aphorisms));
+
         //TODO: Write a function named 'everyOddQuote', that accepts the aphorisms array and returns an array of objects of every odd indexed quote. Each object should contain the following properties: { id: <INDEX_HERE>, quote: <QUOTE_HERE>, author: <AUTHOR_HERE>, rating: <RANDOM_RATING_HERE>}. The random rating should be a number between 1 and 5.
+
+
+
+
     </script>
 </body>
 </html>
