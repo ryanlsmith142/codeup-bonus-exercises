@@ -89,11 +89,11 @@
 
     // Highlight all sections
 
-    $('section').css('background', 'yellow');
+    // $('section').css('background', 'yellow');
 
     // Highlight all articles
 
-    $('article').css('background', 'red');
+    // $('article').css('background', 'red');
 
 
 
@@ -104,27 +104,27 @@
 
     // Highlight the first article
 
-    $('article').first().css('background', 'purple');
+    // $('article').first().css('background', 'purple');
 
 
     // ========================= .last() =========================
 
     // Highlight the last article
 
-    $('article').last().css('background', 'cyan');
+    // $('article').last().css('background', 'cyan');
 
 
     // ========================= .next() =========================
 
     // Highlight the second article
 
-    $('main:nth-child(1)').css('background', 'green');
+    // $('main:nth-child(1)').css('background', 'green');
 
     // Highlight the third li of the entire page
 
-    console.log($('main').children().first().children().last('section').children().children().next().next());
-
-    $('main').children().first().children().last('section').children().children('ol li:nth-child(3)').css('background', 'pink');
+    // console.log($('main').children().first().children().last('section').children().children().next().next());
+    //
+    // $('main').children().first().children().last('section').children().children('ol li:nth-child(3)').css('background', 'pink');
 
 
     // ========================= .children() =========================
@@ -132,27 +132,42 @@
     // Highlight the children of all the ordered lists
 
 
+        // $('ol').children().css('background', 'red');
+
     // Highlight all the sections of the first article
+    //     $('main').children().first().children('section').css('background', 'red');
 
     // Highlight the ordered list of the first article
 
-
+            // $('main').children().first().children().last().css('background', 'red');
 
 
     // ========================= .parent() =========================
 
     // Highlight the entire ordered list when a list item is clicked
 
+    // $('ol').click(function() {
+    //     $(this).css('background', 'red');
+    // }) //click()
 
 
 
     // ========================= .each() =========================
 
     // Highlight the first nested element inside all article elements
-
+    //     $('article').each(function() {
+    //         $(this).children().first().css('background', 'red');
+    //     })
 
     // Highlight the second list item of all ordered lists
 
+    $('li').each(function(element, index) {
+        if(index === 1) {
+
+            $(this).css('background', 'red');
+            console.log('hey from each');
+        }
+    }) //each
 
     // Highlight the third list item of all ordered lists
 
