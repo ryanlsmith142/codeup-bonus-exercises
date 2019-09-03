@@ -161,28 +161,38 @@
 
     // Highlight the second list item of all ordered lists
 
-    $('li').each(function(element, index) {
-        if(index === 1) {
-
-            $(this).css('background', 'red');
-            console.log('hey from each');
-        }
-    }) //each
+    // $('ol').each(function(index) {
+    //         $(this).children().first().next().css('background', 'red');
+    //
+    // }) //each
 
     // Highlight the third list item of all ordered lists
 
-
+    // $('ol').each(function(index) {
+    //     $(this).children().first().next().next().css('background', 'red');
+    //
+    // }) //each
 
 
     // ========================= more complex combinations =========================
 
     // Highlight the first li of the second ordered list
-
+    //     $('main').children().first().next().children().next().next().next().next().next().next().children().children().first().css('background', 'red');
 
     // alert each of the top five items when double clicking on the header for a section
+    $('h3').click(function() {
+        $('ol').each(function() {
+            alert($(this).text());
 
+        })
+    })
 
     // Give a azure background color to every other list item (first item should be azure)
+
+    $('li').each(function() {
+            $('li:even').css('background','azure');
+
+    })
 </script>
 </body>
 </html>
